@@ -33,16 +33,19 @@ const navItems: NavItem[] = [
 const Sidebar = ({
   onToggle,
   collapsed = false,
+  variant = "desktop",
 }: {
   onToggle?: () => void;
   collapsed?: boolean;
+  variant?: "desktop" | "drawer";
 }) => {
   return (
     <div className="h-dvh p-4">
       <aside
         className={[
-          "flex h-full flex-col bg-[#3D3936] text-white rounded-[16px]",
+          "flex h-full flex-col bg-[#3D3936] text-white",
           collapsed ? "w-20" : "w-72",
+          variant === "desktop" ? "rounded-[20px]" : "rounded-none",
         ].join(" ")}
       >
         <div className="flex items-center justify-between px-6 py-6">

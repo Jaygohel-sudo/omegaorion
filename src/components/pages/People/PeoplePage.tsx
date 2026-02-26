@@ -39,12 +39,7 @@ const PeoplePage = () => {
   const startRow = total === 0 ? 0 : (safePage - 1) * pageSize + 1;
   const endRow = Math.min(safePage * pageSize, total);
 
-  // (You have currentTime in your file but it's unused here, so I removed it.)
-  // If you still need it, keep your existing timer logic.
-
-  useEffect(() => {
-    // no-op currently
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className="min-h-0 flex-1 pb-6">
@@ -80,7 +75,7 @@ const PeoplePage = () => {
               <Plus className="h-5 w-5" />
             </button>
 
-            <div className="ml-0 md:ml-2 flex items-center gap-2">
+            <div className="ml-0 md:ml-2 flex items-center gap-1 border-[#E5E5E4] rounded-xl border p-1">
               <ToggleButton
                 active={view === "grid"}
                 onClick={() => setView("grid")}
@@ -180,7 +175,7 @@ function ToggleButton({
     <button
       onClick={onClick}
       className={[
-        "inline-flex h-10 w-10 items-center justify-center rounded-xl border border-stone-200",
+        "inline-flex h-10 w-10 items-center justify-center rounded-xl ",
         active
           ? "bg-[#2f2a27] text-white"
           : "bg-white text-stone-700 hover:bg-stone-50",
