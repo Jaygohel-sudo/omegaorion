@@ -1,0 +1,68 @@
+import type { Person } from "../../../features/people/types";
+
+export const peopleMock: Person[] = [
+  {
+    id: "EMP-001",
+    name: "Ethan Lee",
+    role: "IT Specialist",
+    department: "Technology",
+    avatarUrl: "https://i.pravatar.cc/200?img=12",
+    statusColors: ["#F59E0B", "#22C55E", "#3B82F6", "#F97316"],
+  },
+  {
+    id: "EMP-002",
+    name: "Emily Baker",
+    role: "Marketing Manager",
+    department: "Marketing",
+    avatarUrl: "https://i.pravatar.cc/200?img=47",
+    statusColors: ["#F59E0B", "#22C55E", "#3B82F6", "#F97316"],
+  },
+  {
+    id: "EMP-003",
+    name: "Micheal Shaun",
+    role: "Sales Director",
+    department: "Sales",
+    avatarUrl: "https://i.pravatar.cc/200?img=14",
+    statusColors: ["#F59E0B", "#22C55E", "#3B82F6", "#F97316"],
+  },
+  {
+    id: "EMP-004",
+    name: "Liam Carter",
+    role: "Product Designer",
+    department: "Design",
+    avatarUrl: "https://i.pravatar.cc/200?img=32",
+    statusColors: ["#F59E0B", "#22C55E", "#3B82F6", "#F97316"],
+  },
+  {
+    id: "EMP-005",
+    name: "Sophia Martinez",
+    role: "HR Manager",
+    department: "Human Resources",
+    avatarUrl: "https://i.pravatar.cc/200?img=25",
+    statusColors: ["#F59E0B", "#22C55E", "#3B82F6", "#F97316"],
+  },
+  {
+    id: "EMP-006",
+    name: "Noah Williams",
+    role: "Backend Engineer",
+    department: "Technology",
+    avatarUrl: "https://i.pravatar.cc/200?img=36",
+    statusColors: ["#F59E0B", "#22C55E", "#3B82F6", "#F97316"],
+  },
+  {
+    id: "EMP-007",
+    name: "Olivia Johnson",
+    role: "UX Researcher",
+    department: "Design",
+    avatarUrl: "https://i.pravatar.cc/200?img=28",
+    statusColors: ["#F59E0B", "#22C55E", "#3B82F6", "#F97316"],
+  },
+  {
+    id: "EMP-008",
+    name: "James Anderson",
+    role: "Finance Analyst",
+    department: "Finance",
+    avatarUrl: "https://i.pravatar.cc/200?img=52",
+    statusColors: ["#F59E0B", "#22C55E", "#3B82F6", "#F97316"],
+  },
+];

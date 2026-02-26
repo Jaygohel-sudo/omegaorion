@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Brother";
+  src: url("/fonts/brother-1816.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-display: Brother, sans-serif;
+  --font-oi: Oi, sans-serif;
+}
+
+* {
+  font-family: display, sans-serif;
+  word-spacing: -2%;
+}
